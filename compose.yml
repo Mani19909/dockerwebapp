@@ -3,12 +3,12 @@ version: "3"
 services:
  devopsdb:
    container_name: devopsdb
-   image: shaikmustafa/ccitrepo:dbimage
+   image: manikantarouthu/docker-project:db Docker-db
    ports:
      - "3306:3306"
 
  application:
-   image: shaikmustafa/ccitrepo:appimage
+   image: manikantarouthu/docker-project:app Docker-app
    container_name: appcontainer
    ports:
      - "1234:8080"
